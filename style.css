@@ -1,0 +1,409 @@
+@import url('file:///C:/Users/joaop/Desktop/Portif%C3%B3lio/index.HTML');
+
+*{
+     margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+     font-family: 'poppins', sans-serif;
+
+}
+
+
+body {
+    background: #081b29;
+    color: #ededed;
+    margin: 0;
+    padding: 0;
+    height: 2500px; 
+    background: linear-gradient(to bottom, #000000, #000000); 
+    transition: background-color 0.5s ease;
+}
+
+#content {
+    padding: 20px;
+}
+
+.header a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    animation: showRight 1s ease forwards;
+    animation-delay: 0.8s;
+ }
+
+.header {
+         position: fixed;
+         top: 0;
+         left: 0;
+         width: 100%;
+         padding: 20px 10%;
+         background: transparent;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         z-index: 100;
+
+}
+
+.logo {
+    position: relative;
+      font-size: 25px;
+      color: #ededed;
+      text-decoration: none;
+      font-weight: 600;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120%;
+    height: 100%;
+    background: #000000;
+    animation: showRight 1s ease forwards ;
+    animation-delay: .4s;
+    transition:  3s;
+}
+.navbar a{
+    position: relative;
+       font-size: 18px;
+       color: #ededed;
+       text-decoration: none;
+       font-weight: 500;
+       margin-left: 35px;
+       transition: .3s;
+}
+
+.navbar a:hover, 
+.navbar a.active {
+       color: #00abf0;
+}
+.Início {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+   
+}
+.Início-content {
+    max-width: 600px;
+}
+.Início-content h1 {
+    position: relative;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-top: -400px;
+    left: -40px;
+}
+
+.Início-content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    animation: showRight 1s ease forwards ;
+    animation-delay: .5s;
+}
+.Início-content h3 {
+    position: relative;
+     font-size: 25px;
+     font-weight: 700;
+     color: #00abf0;
+}
+.Início-content h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    animation: showRight 1s ease forwards ;
+    animation-delay: 0.7s;
+
+  }
+
+.Início-content p {
+          position: relative;
+          font-size: 16px;
+          margin: 20px 0 40px;
+
+}
+
+.Início-content p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    animation: showRight 1s ease forwards ;
+    animation-delay: 0.8s;
+  }
+
+
+.Início-sci {
+     position: absolute;
+     bottom: 40px;
+     width: 170px;
+     display: flex;
+     justify-content: space-between;
+}
+
+.Início-sci::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    animation: showRight 1s ease forwards ;
+    animation-delay: 0.9s;
+    z-index: 2;
+  }
+
+
+.Início-sci a:hover {
+color: #000000;
+
+}
+
+.Início-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: rgb(0, 255, 98);
+    z-index: -1;
+    transition: .5s;
+}
+.Início-sci a:hover::before {
+    width: 100%;
+}
+
+@keyframes showRight {
+100% {
+width: 0;
+}
+}
+#z {
+    position: absolute;
+    top: 0;
+    right: -135px;
+    width: 370px;
+    height: auto;
+    opacity: 0; 
+    transition: opacity 1s ease;
+    float: right;
+    margin-top: 140px;
+    margin-right: 200px;
+ }
+
+ .imagemAnimada {
+    animation: fadeIn 1s ease forwards;
+    animation-delay: 0.8s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#whatsappButton {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        outline: none;
+}
+#whatsappButton:hover {
+    background-color: #45a049;
+}
+
+.hidden {
+ display: none;
+ margin-top: 30px;
+ }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#whatsappButton{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    display: block;
+}
+#whatsappButton::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    animation: showRight 1s ease forwards ;
+    animation-delay: 0.9s;
+    z-index: 2;
+}
+
+
+.obre {
+    margin-left: 250px; 
+   top: -38px;
+   position: relative;
+}
+
+
+
+.texto-escondido {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.aparecer {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.conteudo {
+    padding-left: 25px;
+    margin-top: -20px; 
+}
+
+.zzz {
+    width: 540px; 
+    height: auto; 
+    position: relative;
+    left: 430px;
+    top: 850px;    
+}
+
+
+.habilidade{
+    width: 540px; 
+    height: auto; 
+    position: relative;
+    left: 250px;
+    top: 400px;  
+}
+
+
+.zzzz {
+    width: 400px; 
+    height: auto; 
+    position: relative;
+    left: 890px;
+    top: 1460px; 
+    border-radius: 50%;
+}   
+
+
+.habilidade { 
+    height: auto; 
+    position: relative;
+    left: 60px;
+    top: px;  
+}
+
+.texto-aparecendo {
+    opacity: 0;
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+
+.tituloo {
+    width: 540px; 
+    height: auto; 
+    position: relative;
+    left: 210px;
+    top: 370px;  
+
+}
+
+.conteudo {
+position: relative;
+    left: 30px;
+}
+  .projetos {
+position: relative;
+width: none;
+top: 700px;
+font-size: 30px;
+left: 10px;
+height: none;
+display: flex;
+justify-content: center;
+align-items: center;
+
+  }
+
+
+  
+.linke {
+    position: absolute;
+    top: 550px;
+    margin-left: 150px;
+    font-size: 45px;
+}
+
+
+
+.zzzzz {
+    position: absolute;
+    top: 2250px;
+    margin-left: 640px;
+    font-size: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+  
+
+
